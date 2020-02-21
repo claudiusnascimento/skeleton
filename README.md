@@ -52,3 +52,8 @@ exit
 ```
 http://localhost:8080
 ```
+
+## To run migrations outside the container
+```
+sudo docker-compose exec app php artisan migrate
+```
