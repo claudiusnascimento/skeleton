@@ -25,8 +25,7 @@ docker-compose up -d
 
 ## Access the container with 'sudo' permissions
 
-docker exec -u root -t -i container_name /bin/bash
-*change container_name with the name of the app. If you dont change the docker-compose.yml use 'app'*
+docker exec -u root -t -i app /bin/bash
 
 ## Inside the container, run
 
