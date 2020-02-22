@@ -1,10 +1,6 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# LARAVEL SKELETON
 
-<p align="center" color="red">
-    SKELETON
-</p>
-
-## About Laravel Skeleton
+## About
 
 Soon
 
@@ -51,4 +47,9 @@ exit
 ## Access the application
 ```
 http://localhost:8080
+```
+
+## To run migrations outside the container
+```
+sudo docker-compose exec app php artisan migrate
 ```
