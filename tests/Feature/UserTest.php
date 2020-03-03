@@ -20,8 +20,8 @@ class UserTest extends TestCase
         $this->users = factory(User::class, $n)->create();
     }
 
-    /** @ptest */
-    public function testUsersRouteExists()
+    /** @test */
+    public function the_user_route_exists()
     {
         $response = $this->get('/admin/users');
 
@@ -63,5 +63,20 @@ class UserTest extends TestCase
         $this->createUsers($count);
 
         $this->assertEquals($this->users->count(), $count);
+    }
+
+    /** @test */
+    public function access_list_users_page() 
+    {
+
+        $response = $this->get('/admin/users');
+
+        $response->assertSuccessful();
+
+        $response->assertViewIs('admin.modules.users.index');
+
+        $response->assertViewHas('users', \App\Models\User::all());
+
+        $response->assertSee('Usuários');
     }
 }

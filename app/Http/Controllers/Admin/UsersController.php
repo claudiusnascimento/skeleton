@@ -14,7 +14,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('admin.modules.users.index')->with('users', \App\Models\User::all());
     }
 
     /**
