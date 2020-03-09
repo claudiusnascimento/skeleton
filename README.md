@@ -1,4 +1,4 @@
-# LARAVEL SKELETON
+# LARAVEL SKELETON 6.x
 
 ## About
 
