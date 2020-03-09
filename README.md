@@ -33,6 +33,12 @@ composer install
 chmod -R 777 storage/
 chmod -R 777 bootstrap/
 ```
+
+## Copy .env.axample
+```
+cp .env.example .env
+```
+
 ## Generate the key
 ```
 php artisan key:generate
